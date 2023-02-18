@@ -24,5 +24,13 @@ namespace ToDoMaui.ViewModels
             database = todoItemDatabase ?? new TodoItemDatabase();
 
         }
+
+
+        [RelayCommand]
+        private async Task GetItems()
+        {
+            return;
+        }
+
     }
 }
