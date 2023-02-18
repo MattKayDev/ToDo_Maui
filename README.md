@@ -1,5 +1,5 @@
 # To Do App using MAUI
-To Do Application using .NET Maui ,C# and SQLite
+To Do application using .NET Maui ,C# and SQLite
 
 ## Objectives
 To create a app allowing user to create a to do list on their phone. 
