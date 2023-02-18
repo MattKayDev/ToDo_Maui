@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using ToDoMaui.Views;
 
 namespace ToDoMaui;
 
@@ -14,6 +15,11 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
+
+		builder.Services.AddSingleton<TodoListPage>();
+		builder.Services.AddTransient<TodoItemPage>();
+
+		builder.Services.AddSingleton<TodoItemDatabase>();
 
 #if DEBUG
 		builder.Logging.AddDebug();
